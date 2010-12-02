@@ -37,6 +37,8 @@ describe SessionsController do
             post :create, :session => @attr
             flash.now[:error].should =~ /invalid/i
           end
+          
         end
       end
     end
+  end
