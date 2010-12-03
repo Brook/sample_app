@@ -1,0 +1,15 @@
+1) All three of these will work as will_paginate is a 'collection'
+Lesson 10 - 1:45
+
+# 1
+<% @users.each do |user| %>
+	<%= render 'user', :user => user %>
+<% end %>
+
+# 2
+<% @users.each do |user| %>
+	<%= render user %>
+<% end %>
+
+# 3
+<%= render @users %>
